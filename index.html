@@ -7,12 +7,13 @@
             * {box-sizing: border-box;}
  
             /* Caption text */
-            #myVideo {
+            .myVideo {
                 position: fixed;
                 right: 0;
                 bottom: 0;
                 min-width: 100%;
                 min-height: 100%;
+                z-index: -1;
             }
 
             .but {
@@ -63,14 +64,30 @@
                 text-align: center;
                 color: #ffffff;
             }
+            header h1 {
+                color: #ffd000;
+                font-weight: bolder;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            header h3 {
+                color:#0077ff;
+                font-family: cursive;
+            }
 
         </style>
     </head>
     <body>
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop class="myVideo">
             <source src="./images/landing.mp4" type="video/mp4">
         </video>
+        <header>
+            <h1>LaunchSim</h1>
+            <h3>A fun and interactive way to boost your<br> confidence in the launch process</h3>
+        </header>
+        
+
         <form action="https://sparrowsimv1.000webhostapp.com/main.php" method="post">
+
             <div class="container">
                 <h2>Launch Simulator</h2>
                 <input id="fname" type="text" placeholder="First Name" name="fname" required><br>
