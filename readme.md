@@ -1,9 +1,7 @@
-# hello-world
-Hello World repository for Git tutorial
-This is an example repository for the Git tutoial on https://www.w3schools.com
-
-This repository is built step by step in the tutorial.
-Testing git online editor.
-
-Testing how to use the git pull command.
-Testing how to use the git pull command.
+------------------------------------------------------------------
+------------------------------------------------------------------
+---             PROJECT TITLE: LAUNCH SIMULATOR                ---
+---             AUTHORS: MOZAK && NGOZI
+---             START DATE: 15 MAY 2023                        ---
+------------------------------------------------------------------
+------------------------------------------------------------------

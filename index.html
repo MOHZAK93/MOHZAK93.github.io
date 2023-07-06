@@ -1,22 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Testing Git</h1>
-    <div><img src="sch1.jpg" alt="Hello World from Space"
-        style="width:100%;max-width:960px"></div>
-        <div><img src="health.jpg" alt="Hello World from Space"
-            style="width:100%;max-width:960px"></div>
-    <p>This is not my first time though</p>
-    <p>Another line of code</p>
-    <p>Emergency fix line</p>
-    <p>Testing how the push command works</p>
-    <p>Testing new branch - html skeleton</p>
-</body>
-</html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>document.write('<script src="script.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
+        <style>
+            * {box-sizing: border-box;}
+ 
+            /* Caption text */
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .but {
+                color: #ffffff;
+                position: absolute;
+                bottom: 0px;
+                left:0px;
+            }
+            .active {
+                background-color: #717171;
+            } 
+            input[type=text],input[type=submit]{
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding: 12px 20px;
+                border: 4px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color:#00e1ff;
+                color: #000;
+                padding: 14px 20px;
+                display: block;
+                margin: auto;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 30%;
+            }
+
+            .container {
+                width: 400px;
+                height: 380px;
+                padding: 30px;
+                background-color: #FF0000;
+                opacity: 0.6;
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            .container h2 {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center;
+                color: #ffffff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="./images/landing.mp4" type="video/mp4">
+        </video>
+        <form action="https://sparrowsimv1.000webhostapp.com/main.php" method="post">
+            <div class="container">
+                <h2>Launch Simulator</h2>
+                <input id="fname" type="text" placeholder="First Name" name="fname" required><br>
+                <input id="lname" type="text" placeholder="Last Name" name="lname" required style='margin-top:15px;'>
+                <input type='submit' id="submit" value='Submit' name=success style='background-color:red;color:white; margin-top:60px; padding:5px;font-size: 20px;cursor:pointer;'>
+            </div>
+        </form>
+    </body>
+</html> 
